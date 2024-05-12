@@ -19,6 +19,10 @@ h3 {
 /* Header */
 header {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Containers */
@@ -37,10 +41,33 @@ article div {
   width: 100%;
 }
 
+.about-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-item {
+  flex: 1;
+  padding: 10px;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
 }
+
+#about p {
+  text-align: left;
+}
+
+section p {
+  font-size: 14px;
+} 
 
 /* Links */
 a:link {
@@ -75,4 +102,9 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+#about ul {
+  text-align: left;
+  font-size: 14px;
 }
